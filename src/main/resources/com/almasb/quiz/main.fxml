@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.almasb.quiz.Controller"
+            prefHeight="600.0" prefWidth="600.0">
+
+    <center>
+        <ListView fx:id="listView" />
+    </center>
+
+    <right>
+        <VBox spacing="15">
+            <Button text="Add" onAction="#onAdd"></Button>
+            <Button text="Save" onAction="#onSave"></Button>
+            <Button text="Edit" onAction="#onEdit"></Button>
+
+            <TextField fx:id="fieldName" text="" />
+            <TextField fx:id="fieldA" text="" />
+            <TextField fx:id="fieldB" text="" />
+            <TextField fx:id="fieldC" text="" />
+            <TextField fx:id="fieldD" text="" />
+
+            <padding>
+                <Insets topRightBottomLeft="15" />
+            </padding>
+        </VBox>
+    </right>
+
+</BorderPane>
